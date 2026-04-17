@@ -1,0 +1,6 @@
+{
+  "name": "Password Tester",
+  "description": "An AI-powered password analyzer that evaluates strength and provide actionable security insights based on NIST guidelines.",
+  "requestFramePermissions": [],
+  "majorCapabilities": []
+}

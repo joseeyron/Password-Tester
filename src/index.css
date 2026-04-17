@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  
+  --color-bg-dark: #0A0A0B;
+  --color-surface: #141416;
+  --color-accent-strong: #00FF94;
+  --color-accent-medium: #FFD600;
+  --color-accent-weak: #FF4D4D;
+  --color-text-main: #FFFFFF;
+  --color-text-dim: #808085;
+}
+
+@layer base {
+  body {
+    background-color: var(--color-bg-dark);
+    color: var(--color-text-main);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* Remove native browser password reveal eye */
+  input::-ms-reveal,
+  input::-ms-clear,
+  input::-webkit-password-reveal,
+  input::-webkit-contacts-auto-fill-button {
+    display: none !important;
+    width: 0 !important;
+    height: 0 !important;
+    appearance: none !important;
+  }
+}
